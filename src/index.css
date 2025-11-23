@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar for a more modern look (migrated from index.html) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #04445F; /* brand-navy */
+}
+::-webkit-scrollbar-thumb {
+  background: #75E6DA; /* brand-green/grotto */
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #F4F4F4; /* brand-baby */
+}
+
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}

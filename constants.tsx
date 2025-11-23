@@ -110,15 +110,15 @@ export const CATEGORIES = [
 
 
 export const TEAM_MEMBERS = [
-    {
-        name: 'Alex Johnson',
-        title: 'CEO & Founder',
-        imageUrl: '/assets/Abinash.png', 
-    },
+  {
+    name: 'Alex Johnson',
+    title: 'CEO & Founder',
+    imageUrl: Abinash,
+  },
     {
         name: 'Maria Garcia',
         title: 'Chief Technology Officer',
-        imageUrl: 'https://i.pravatar.cc/150?u=a042581f4e29026704d',
+      imageUrl: Abinash,
     },
     {
         name: 'James Smith',
