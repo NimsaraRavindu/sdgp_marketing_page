@@ -1,6 +1,6 @@
 
 import React from 'react';
-const Abinash = "/assets/Abinash.png";
+const Abinash = "/assets/Photos/Abinash.png";
 
 export const LogoIcon: React.FC = () => (
   <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-brand-green">

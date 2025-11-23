@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Stats from './components/Stats';
 import Demo from './components/Demo';
 import HowItWorks from './components/HowItWorks';
+import Video from './components/Video';
 import Discover from './components/Discover';
 import Features from './components/Features';
 import Stories from './components/Stories';
@@ -21,6 +22,7 @@ const App: React.FC = () => {
         <Hero />
         <Stats />
         <Demo />
+        <Video />
         <Discover />
         <HowItWorks />
         <World />
