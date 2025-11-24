@@ -87,15 +87,16 @@ export const CATEGORIES = [
     title: 'Cultural',
     description: 'Celebrate creativity and diversity through vibrant cultural events. From performances to festivals, experience expressions from every community.',
     bgImage: 'https://images.unsplash.com/photo-1459749411177-0473ef716089?auto=format&fit=crop&q=80&w=2070',
-    mainImage: 'https://images.unsplash.com/photo-1533174072545-e8d4aa97edf9?auto=format&fit=crop&q=80&w=1000',
-    subImage: 'https://images.unsplash.com/photo-1514525253440-b393452e3383?auto=format&fit=crop&q=80&w=1000',
+
+    mainImage: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=1000',
+    subImage: 'https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&q=80&w=1000',
   },
   {
     id: 'social',
     title: 'Social',
     description: 'Connect, interact, and build memories through fun social events. From mixers to community gatherings, there’s something for everyone.',
-    bgImage: 'https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&q=80&w=2070',
-    mainImage: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=1000',
+
+    mainImage: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1000',
     subImage: 'https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&q=80&w=1000',
   },
   {
@@ -111,33 +112,33 @@ export const CATEGORIES = [
 
 export const TEAM_MEMBERS = [
   {
-    name: 'Alex Johnson',
-    title: 'CEO & Founder',
+    name: 'Aaqaib',
+    title: 'Group Leader',
     imageUrl: Abinash,
   },
     {
-        name: 'Maria Garcia',
-        title: 'Chief Technology Officer',
+        name: 'Nimsara',
+        title: 'Backend Engineer',
       imageUrl: Abinash,
     },
     {
-        name: 'James Smith',
-        title: 'Lead Product Designer',
-        imageUrl: 'https://i.pravatar.cc/150?u=a04258114e29026702d',
+        name: 'Abinash',
+        title: 'Backend Engineer',
+        imageUrl: Abinash,
     },
     {
-        name: 'Priya Patel',
-        title: 'Head of Community',
+        name: 'Sai',
+        title: 'Frontend Engineer',
         imageUrl: 'https://i.pravatar.cc/150?u=a048581f4e29026701d',
     },
     {
-        name: 'Chen Wang',
-        title: 'Senior Backend Engineer',
+        name: 'Arani',
+        title: 'Frontend Engineer',
         imageUrl: 'https://i.pravatar.cc/150?u=a092581f4e29026700d',
     },
     {
-        name: 'Fatima Ahmed',
-        title: 'Marketing Director',
+        name: 'Tharusiyaa',
+        title: 'Frontend Engineer',
         imageUrl: 'https://i.pravatar.cc/150?u=a042581f4e29026706d',
     },
 ];

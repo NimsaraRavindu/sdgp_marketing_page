@@ -12,6 +12,19 @@ interface CategoryCardProps {
 }
 
 const CategoryCard: React.FC<CategoryCardProps> = ({ title, description, bgImage, mainImage, subImage, index }) => {
+  const mainSrc = mainImage || subImage || '';
+  const subSrc = subImage || mainImage || '';
+
+  const handleImgError = (e: React.SyntheticEvent<HTMLImageElement, Event>, fallback: string) => {
+    const el = e.currentTarget as HTMLImageElement;
+    if (el.src === fallback || !fallback) {
+      // if already tried fallback or no fallback, hide the broken image
+      el.style.display = 'none';
+      return;
+    }
+    el.src = fallback;
+  };
+
   return (
     <motion.div 
       initial={{ opacity: 0, y: 50 }}
@@ -54,20 +67,21 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ title, description, bgImage
             href="#contact"
             whileHover={{ scale: 1.05, backgroundColor: '#75E6DA', color: '#05445E' }}
             whileTap={{ scale: 0.95 }}
-            className="inline-block px-6 py-2 bg-brand-green text-brand-navy font-bold text-sm rounded-full transition-colors duration-300 shadow-md shadow-brand-green/20 cursor-pointer"
+            className="relative z-20 inline-block px-6 py-2 bg-brand-green text-brand-navy font-bold text-sm rounded-full transition-colors duration-300 shadow-md shadow-brand-green/20 cursor-pointer"
           >
             Join Now
           </motion.a>
         </div>
 
         {/* Floating Images Composition */}
-        <div className="absolute bottom-6 right-6 md:bottom-10 md:right-10 flex items-end space-x-[-20px]">
+            <div className="md:absolute md:bottom-6 md:right-6 md:bottom-10 md:right-10 flex items-end space-x-[-20px]">
            {/* Secondary Image (Back) */}
            <div className="relative z-0 transform translate-x-4 translate-y-2 transition-transform duration-500 group-hover:translate-x-0 w-24 h-32 md:w-32 md:h-40">
             <motion.img 
-              src={subImage} 
+              src={subSrc} 
               alt="Detail view" 
               className="w-full h-full object-cover rounded-xl border-2 border-brand-grotto/50 shadow-lg opacity-100"
+              onError={(e) => handleImgError(e, mainSrc)}
               initial={{ opacity: 0, scale: 0.8, x: 20 }}
               whileInView={{ opacity: 1, scale: 1, x: 0 }}
               viewport={{ once: true }}
@@ -78,15 +92,22 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ title, description, bgImage
           {/* Main Image (Front) */}
           <div className="relative z-10 transition-transform duration-500 group-hover:-translate-y-2 w-32 h-32 md:w-48 md:h-48">
             <motion.img 
-              src={mainImage} 
+              src={mainSrc} 
               alt={`${title} highlight`} 
               className="w-full h-full object-cover rounded-2xl border-4 border-brand-grotto shadow-xl opacity-100"
+                onError={(e) => handleImgError(e, subSrc)}
               initial={{ opacity: 0, scale: 0.8, y: 20 }}
               whileInView={{ opacity: 1, scale: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.5 + (index * 0.1) }}
             />
           </div>
+        </div>
+
+        {/* Mobile: show images inline below text to avoid overlapping */}
+        <div className="mt-6 md:hidden flex items-center space-x-4">
+          <img src={mainSrc} alt={`${title} mobile`} className="w-24 h-24 object-cover rounded-xl border-2 border-brand-grotto shadow-md" onError={(e) => handleImgError(e, subSrc)} />
+          <img src={subSrc} alt="detail mobile" className="w-16 h-20 object-cover rounded-md border-2 border-brand-grotto/50 shadow-sm" onError={(e) => handleImgError(e, mainSrc)} />
         </div>
 
       </div>
