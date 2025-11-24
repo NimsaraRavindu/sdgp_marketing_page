@@ -1,6 +1,7 @@
 
 import React from 'react';
-const Abinash = "/assets/Photos/Abinash.png";
+// Import local assets so Vite will process and bundle them for production
+const Abinash = new URL('./assets/Photos/Abinash.png', import.meta.url).href;
 
 export const LogoIcon: React.FC = () => (
   <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-brand-green">

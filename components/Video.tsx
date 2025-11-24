@@ -1,6 +1,6 @@
 import React from 'react';
 
-const VIDEO_SRC = '/assets/videos/Project_Linkara_Blueprint.mp4';
+const VIDEO_SRC = new URL('../assets/videos/Project_Linkara_Blueprint.mp4', import.meta.url).href;
 
 const Video: React.FC = () => {
   return (
