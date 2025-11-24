@@ -2,6 +2,8 @@
 import React from 'react';
 // Import local assets so Vite will process and bundle them for production
 const Abinash = new URL('./assets/Photos/Abinash.png', import.meta.url).href;
+const Aaqib = new URL('./assets/Photos/Aaqib.jpeg', import.meta.url).href;
+const Tharusiyaa = new URL('./assets/Photos/Tharusiyaa.jpeg', import.meta.url).href;
 
 export const LogoIcon: React.FC = () => (
   <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-brand-green">
@@ -113,35 +115,35 @@ export const CATEGORIES = [
 
 export const TEAM_MEMBERS = [
   {
-    name: 'Aaqaib',
+    name: 'Aaqib',
     title: 'Group Leader',
+    imageUrl: Aaqib,
+  },
+  {
+    name: 'Nimsara',
+    title: 'Backend Engineer',
+    imageUrl: '',
+  },
+  {
+    name: 'Abinash',
+    title: 'Backend Engineer',
     imageUrl: Abinash,
   },
-    {
-        name: 'Nimsara',
-        title: 'Backend Engineer',
-      imageUrl: Abinash,
-    },
-    {
-        name: 'Abinash',
-        title: 'Backend Engineer',
-        imageUrl: Abinash,
-    },
-    {
-        name: 'Sai',
-        title: 'Frontend Engineer',
-        imageUrl: 'https://i.pravatar.cc/150?u=a048581f4e29026701d',
-    },
-    {
-        name: 'Arani',
-        title: 'Frontend Engineer',
-        imageUrl: 'https://i.pravatar.cc/150?u=a092581f4e29026700d',
-    },
-    {
-        name: 'Tharusiyaa',
-        title: 'Frontend Engineer',
-        imageUrl: 'https://i.pravatar.cc/150?u=a042581f4e29026706d',
-    },
+  {
+    name: 'Sai',
+    title: 'Frontend Engineer',
+    imageUrl: 'https://i.pravatar.cc/150?u=a048581f4e29026701d',
+  },
+  {
+    name: 'Arani',
+    title: 'Frontend Engineer',
+    imageUrl: 'https://i.pravatar.cc/150?u=a092581f4e29026700d',
+  },
+  {
+    name: 'Tharusiyaa',
+    title: 'Frontend Engineer',
+    imageUrl: Tharusiyaa,
+  },
 ];
 
 export const STATS_DATA = [
