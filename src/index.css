@@ -7,14 +7,14 @@
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #04445F; /* brand-navy */
+  background: #ffffff; /* brand-white */
 }
 ::-webkit-scrollbar-thumb {
-  background: #75E6DA; /* brand-green/grotto */
+  background: #06b6d4; /* brand-grotto accent */
   border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #F4F4F4; /* brand-baby */
+  background: #0f1724; /* brand-navy (darker on hover) */
 }
 
 .font-serif {

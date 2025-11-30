@@ -31,7 +31,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ title, description, bgImage
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
-      className="group relative w-full h-[450px] md:h-[400px] rounded-[2rem] overflow-hidden shadow-2xl border border-brand-grotto/30 hover:border-brand-green/50 hover:shadow-brand-grotto/20 bg-brand-navy"
+      className="group relative w-full h-[450px] md:h-[400px] rounded-[2rem] overflow-hidden shadow-2xl border border-brand-baby/30 hover:border-brand-green/50 hover:shadow-brand-green/20 bg-brand-baby/10"
     >
       {/* Background Image & Overlay */}
       <div className="absolute inset-0">
@@ -48,8 +48,8 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ title, description, bgImage
             className="w-full h-full object-cover transition-all duration-700 group-hover:scale-105 opacity-100"
           />
         </motion.div>
-        <div className="absolute inset-0 bg-gradient-to-r from-brand-navy via-brand-navy/80 to-brand-navy/40 opacity-70"></div>
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-navy/90 to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-white via-brand-baby/20 to-brand-baby/10 opacity-90"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-white/80 to-transparent"></div>
       </div>
 
       {/* Content Container */}
@@ -57,10 +57,10 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ title, description, bgImage
         
         {/* Text Content */}
         <div className="max-w-md">
-          <h3 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4 tracking-tight drop-shadow-lg">
+          <h3 className="text-4xl md:text-5xl font-serif font-bold text-brand-navy mb-4 tracking-tight">
             {title}
           </h3>
-          <p className="text-brand-baby text-sm md:text-base leading-relaxed mb-6 opacity-90">
+          <p className="text-brand-navy text-sm md:text-base leading-relaxed mb-6">
             {description}
           </p>
           <motion.a 
@@ -117,7 +117,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ title, description, bgImage
 
 const Discover: React.FC = () => {
   return (
-    <section id="discover" className="py-20 bg-brand-navy">
+    <section id="discover" className="py-20 bg-brand-white">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8">
           {CATEGORIES.map((category, index) => (

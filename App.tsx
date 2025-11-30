@@ -16,7 +16,7 @@ import World from './components/World';
 
 const App: React.FC = () => {
   return (
-    <div className="bg-brand-navy min-h-screen font-sans text-brand-baby selection:bg-brand-green/30 selection:text-brand-navy">
+    <div className="bg-brand-white min-h-screen font-sans text-brand-navy selection:bg-brand-grotto/20 selection:text-brand-navy">
       <Header />
       <main>
         <Hero />

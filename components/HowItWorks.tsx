@@ -14,22 +14,22 @@ const HowItWorks: React.FC = () => {
   ];
 
   return (
-    <section id="how-it-works" className="py-24 bg-brand-navy relative overflow-hidden">
+    <section id="how-it-works" className="py-24 bg-brand-white relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute top-1/4 left-0 w-96 h-96 bg-brand-grotto/10 rounded-full blur-[100px] pointer-events-none" />
       <div className="absolute bottom-1/4 right-0 w-96 h-96 bg-brand-green/10 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6 font-serif text-brand-baby">How It Works</h2>
-          <p className="text-brand-baby/70 max-w-2xl mx-auto text-lg">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 font-serif text-brand-navy">How It Works</h2>
+          <p className="text-brand-navy/80 max-w-2xl mx-auto text-lg">
             Whether you're looking to give back, organize events, or sponsor the next big thing, Linkara makes it simple.
           </p>
         </div>
 
         {/* Tabs */}
         <div className="flex justify-center mb-16">
-          <div className="bg-brand-navy/50 p-1 rounded-full inline-flex backdrop-blur-sm border border-brand-grotto/30">
+          <div className="bg-brand-white p-1 rounded-full inline-flex backdrop-blur-sm border border-brand-grey/30">
             {roles.map((role) => (
               <button
                 key={role.id}
@@ -68,10 +68,10 @@ const HowItWorks: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-brand-navy/50 border border-brand-grotto/30 p-8 rounded-2xl relative group hover:border-brand-green/50 hover:bg-brand-navy transition-all duration-300"
+                className="bg-brand-white border border-brand-grey/30 p-8 rounded-2xl relative group hover:border-brand-green/50 hover:bg-brand-green/10 transition-all duration-300"
               >
                 {/* Step Number */}
-                <div className="absolute -top-4 -right-4 w-12 h-12 bg-brand-navy rounded-full border border-brand-grotto flex items-center justify-center text-xl font-bold text-brand-green shadow-xl">
+                <div className="absolute -top-4 -right-4 w-12 h-12 bg-brand-white rounded-full border border-brand-grey flex items-center justify-center text-xl font-bold text-brand-green shadow-xl">
                   {step.step}
                 </div>
                 
@@ -79,8 +79,8 @@ const HowItWorks: React.FC = () => {
                   {step.icon}
                 </div>
                 
-                <h3 className="text-xl font-bold text-brand-baby mb-3">{step.title}</h3>
-                <p className="text-brand-baby/70 leading-relaxed">
+                <h3 className="text-xl font-bold text-brand-navy mb-3">{step.title}</h3>
+                <p className="text-brand-navy/80 leading-relaxed">
                   {step.desc}
                 </p>
 

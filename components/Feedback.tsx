@@ -3,24 +3,24 @@ import { motion } from 'framer-motion';
 
 const Feedback: React.FC = () => {
   return (
-    <section className="py-12 bg-brand-navy border-t border-brand-grotto/20">
+    <section className="py-12 bg-brand-white border-t border-brand-grey/20">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-brand-navy to-brand-grotto/10 border border-brand-grotto/30 shadow-2xl p-8 md:p-12 text-center max-w-4xl mx-auto"
+          className="relative overflow-hidden rounded-2xl bg-brand-baby/10 border border-brand-baby/30 shadow-2xl p-8 md:p-12 text-center max-w-4xl mx-auto"
         >
           {/* Decorative Glows */}
           <div className="absolute top-0 right-0 w-64 h-64 bg-brand-green/10 rounded-full blur-3xl pointer-events-none transform translate-x-1/2 -translate-y-1/2"></div>
           <div className="absolute bottom-0 left-0 w-64 h-64 bg-brand-grotto/10 rounded-full blur-3xl pointer-events-none transform -translate-x-1/2 translate-y-1/2"></div>
 
           <div className="relative z-10">
-            <h2 className="text-2xl md:text-4xl font-serif font-bold text-brand-baby mb-4">
+            <h2 className="text-2xl md:text-4xl font-serif font-bold text-brand-navy mb-4">
               We Value Your Feedback
             </h2>
-            <p className="text-brand-baby/80 text-lg mb-8 max-w-2xl mx-auto">
+            <p className="text-brand-navy/80 text-lg mb-8 max-w-2xl mx-auto">
               Help us shape the future of Linkara. Your insights allow us to build a better ecosystem for volunteers, communities, and sponsors.
             </p>
             

@@ -35,11 +35,7 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`sticky top-0 z-50 transition-all duration-300 ${
-        isScrolled
-          ? 'bg-brand-navy/95 backdrop-blur-md shadow-lg border-b border-brand-grotto/20'
-          : 'bg-transparent border-b border-transparent'
-      }`}
+      className={`sticky top-0 z-50 transition-all duration-300 bg-brand-navy/95 backdrop-blur-md shadow-lg border-b border-brand-grey/20`}
     >
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         {/* Logo */}
@@ -54,7 +50,7 @@ const Header: React.FC = () => {
             <a
               key={link.name}
               href={link.href}
-              className="text-brand-baby hover:text-brand-green transition-colors duration-300 text-sm uppercase tracking-wider font-medium"
+              className="text-white/80 hover:text-brand-green transition-colors duration-300 text-sm uppercase tracking-wider font-medium"
             >
               {link.name}
             </a>
@@ -63,14 +59,14 @@ const Header: React.FC = () => {
 
         {/* Login Button (Desktop) */}
         <div className="hidden lg:flex items-center space-x-4">
-            <a href="#contact" className="px-5 py-2 bg-brand-grotto hover:bg-brand-green text-brand-navy text-sm uppercase tracking-wider font-bold rounded-full transition-colors duration-300 shadow-lg shadow-brand-grotto/20">
+            <a href="#contact" className="px-5 py-2 bg-brand-green hover:bg-brand-green/80 text-white text-sm uppercase tracking-wider font-bold rounded-full transition-colors duration-300 shadow-lg shadow-brand-green/20">
                 Login
             </a>
         </div>
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden text-brand-baby hover:text-brand-green focus:outline-none p-2 relative z-50 transition-colors"
+          className="lg:hidden text-white/90 hover:text-brand-green focus:outline-none p-2 relative z-50 transition-colors"
           onClick={() => setIsMobileMenuOpen(true)}
           aria-label="Open menu"
         >
@@ -99,14 +95,14 @@ const Header: React.FC = () => {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-              className="fixed top-0 right-0 bottom-0 w-64 sm:w-80 bg-brand-navy border-l border-brand-grotto/30 z-[70] lg:hidden shadow-2xl flex flex-col"
+              className="fixed top-0 right-0 bottom-0 w-64 sm:w-80 bg-brand-navy border-l border-brand-grey/30 z-[70] lg:hidden shadow-2xl flex flex-col"
             >
               {/* Sidebar Header */}
-              <div className="p-6 flex justify-between items-center border-b border-brand-grotto/20">
+              <div className="p-6 flex justify-between items-center border-b border-brand-grey/20">
                 <span className="text-xl font-bold font-serif text-white">Menu</span>
                 <button 
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-brand-baby hover:text-brand-green transition-colors p-1"
+                  className="text-white/80 hover:text-brand-green transition-colors p-1"
                   aria-label="Close menu"
                 >
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -127,7 +123,7 @@ const Header: React.FC = () => {
                     <a
                       href={link.href}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className="text-brand-baby hover:text-brand-green text-lg font-medium block py-3 border-b border-brand-grotto/20 last:border-0"
+                      className="text-white/80 hover:text-brand-green text-lg font-medium block py-3 border-b border-brand-grey/20 last:border-0"
                     >
                       {link.name}
                     </a>
@@ -143,7 +139,7 @@ const Header: React.FC = () => {
                   <a
                     href="#contact"
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="block w-full text-center px-5 py-3 bg-brand-grotto hover:bg-brand-green text-brand-navy font-bold rounded-lg transition-colors shadow-lg hover:shadow-brand-green/30"
+                    className="block w-full text-center px-5 py-3 bg-brand-green hover:bg-brand-green/80 text-white font-bold rounded-lg transition-colors shadow-lg hover:shadow-brand-green/30"
                   >
                     Login
                   </a>

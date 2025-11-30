@@ -3,8 +3,8 @@ import { motion } from 'framer-motion';
 
 const Hero: React.FC = () => {
   return (
-    <section className="relative py-20 md:py-32 text-center text-white overflow-hidden">
-      <div className="absolute inset-0 bg-brand-navy/80 backdrop-blur-sm pointer-events-none"></div>
+    <section className="relative py-20 md:py-32 text-center text-brand-navy overflow-hidden">
+      <div className="absolute inset-0 bg-brand-white/80 backdrop-blur-sm pointer-events-none"></div>
       <div 
         className="absolute inset-0 bg-grid-gray-700/[0.2] [mask-image:linear-gradient(to_bottom,white_5%,transparent_90%)] pointer-events-none"
       ></div>
@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
         </motion.h1>
         
         <motion.p 
-          className="text-lg md:text-xl text-brand-baby/80 max-w-3xl mx-auto mb-8"
+          className="text-lg md:text-xl text-brand-navy/80 max-w-3xl mx-auto mb-8"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
@@ -72,7 +72,7 @@ const Hero: React.FC = () => {
           </a>
           <a
             href="#how-it-works"
-            className="w-full sm:w-auto bg-brand-navy border border-brand-grotto/50 hover:bg-brand-grotto/10 text-brand-baby font-semibold py-3 px-8 rounded-lg shadow-lg transition-all duration-300 block cursor-pointer relative z-30 transform hover:scale-105 active:scale-95"
+            className="w-full sm:w-auto bg-brand-white border border-brand-grey/50 hover:bg-brand-green/10 text-brand-navy font-semibold py-3 px-8 rounded-lg shadow-lg transition-all duration-300 block cursor-pointer relative z-30 transform hover:scale-105 active:scale-95"
           >
             Learn More
           </a>

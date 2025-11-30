@@ -11,11 +11,12 @@
           extend: {
             colors: {
               brand: {
-                navy: '#04445F',    // The Blue
-                grotto: '#75E6DA',  // The Lighter Blue (Unified accent)
-                green: '#75E6DA',   // The Lighter Blue (Unified accent)
-                baby: '#F4F4F4',    // Off white
-                white: '#FFFFFF',   // Normal white
+                // Light / white theme
+                white: '#FFFFFF',    // page background
+                navy: '#0f1724',     // dark text / headings
+                baby: '#374151',     // muted paragraphs / secondary text
+                grotto: '#06b6d4',   // accent (cyan)
+                green: '#06b6d4',    // accent alias
               }
             }
           }
@@ -58,7 +59,7 @@
 }
 </script>
 </head>
-  <body class="bg-brand-navy text-brand-baby font-sans antialiased">
+  <body class="bg-brand-white text-brand-navy font-sans antialiased">
     <div id="root"></div>
     <script type="module" src="/index.tsx"></script>
   </body>

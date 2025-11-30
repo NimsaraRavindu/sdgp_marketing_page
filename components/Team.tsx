@@ -16,7 +16,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ imageUrl, name, title }
         visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } }
       }}
       whileHover={{ y: -10, transition: { duration: 0.3 } }}
-      className="text-center bg-brand-navy/50 p-6 rounded-xl border border-brand-grotto/30 shadow-lg group hover:border-brand-green/50 hover:shadow-brand-green/10"
+      className="text-center bg-brand-white p-6 rounded-xl border border-brand-grey/30 shadow-lg group hover:border-brand-green/50 hover:shadow-brand-green/10"
     >
       <div className="relative w-32 h-32 mx-auto mb-4">
          <motion.img
@@ -29,7 +29,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ imageUrl, name, title }
           <div className="absolute inset-0 rounded-full bg-brand-grotto/20 blur-md transform scale-0 group-hover:scale-110 transition-transform duration-300"></div>
       </div>
      
-      <h3 className="text-xl font-bold text-brand-baby">{name}</h3>
+      <h3 className="text-xl font-bold text-brand-navy">{name}</h3>
       <p className="text-brand-grotto font-medium">{title}</p>
     </motion.div>
   );
@@ -37,7 +37,7 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ imageUrl, name, title }
 
 const Team: React.FC = () => {
   return (
-    <section id="team" className="py-20 bg-brand-navy">
+    <section id="team" className="py-20 bg-brand-white">
       <div className="container mx-auto px-6">
         <motion.div 
           className="text-center mb-12"
@@ -46,10 +46,10 @@ const Team: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-3 text-brand-baby">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3 text-brand-navy">
             Meet the Visionaries
           </h2>
-          <p className="text-lg text-brand-baby/70 max-w-2xl mx-auto">
+          <p className="text-lg text-brand-navy/80 max-w-2xl mx-auto">
             The passionate team dedicated to building the future of community and corporate partnerships.
           </p>
         </motion.div>

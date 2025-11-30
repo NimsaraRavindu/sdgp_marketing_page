@@ -127,7 +127,7 @@ const World: React.FC = () => {
                     points.push(p);
                 }
                 const curveGeo = new THREE.BufferGeometry().setFromPoints(points);
-                const curveMat = new THREE.LineBasicMaterial({ color: 0x75E6DA, transparent: true, opacity: 0.12 });
+                const curveMat = new THREE.LineBasicMaterial({ color: 0x75E6DA, transparent: true, opacity: 0.28 });
                 const line = new THREE.Line(curveGeo, curveMat);
                 earthGroup.add(line);
             }
@@ -183,31 +183,31 @@ const World: React.FC = () => {
     }, []);
 
     return (
-        <section className="py-20 bg-brand-navy overflow-hidden relative">
-            <div className="absolute top-20 left-0 right-0 z-10 pointer-events-none">
-                <div className="container mx-auto px-6 text-center">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif text-brand-baby drop-shadow-lg">Global Network</h2>
-                    <p className="text-brand-baby/70 max-w-2xl mx-auto text-lg drop-shadow-md">Connecting communities, sponsors, and volunteers across the world in real-time.</p>
+        <section className="py-20 bg-brand-white overflow-hidden">
+            <div className="container mx-auto px-6">
+                <div className="text-center">
+                    <h2 className="text-3xl md:text-4xl font-bold mb-4 font-serif text-brand-navy">Global Network</h2>
+                    <p className="text-brand-navy/80 max-w-2xl mx-auto text-lg">Connecting communities, sponsors, and volunteers across the world in real-time.</p>
 
-                    {/* Legend: show what each dot means */}
-                    <div className="mt-6 flex justify-center items-center space-x-8 text-sm font-medium pointer-events-auto">
-                        <div className="flex items-center text-brand-baby">
+                    {/* Legend: show what each dot means (kept outside the globe box) */}
+                    <div className="mt-6 mb-8 flex justify-center items-center space-x-10 text-sm font-medium">
+                        <div className="flex items-center text-brand-navy">
                             <span className="inline-block w-3 h-3 rounded-full mr-2" style={{ background: '#75E6DA' }} />
                             <span>Volunteers</span>
                         </div>
-                        <div className="flex items-center text-brand-baby">
+                        <div className="flex items-center text-brand-navy">
                             <span className="inline-block w-3 h-3 rounded-full mr-2 border" style={{ background: '#F4F4F4', borderColor: 'rgba(0,0,0,0.12)' }} />
                             <span>Sponsors</span>
                         </div>
-                        <div className="flex items-center text-brand-baby">
+                        <div className="flex items-center text-brand-navy">
                             <span className="inline-block w-3 h-3 rounded-full mr-2" style={{ background: '#75E6DA' }} />
                             <span>Events</span>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div ref={mountRef} className="w-full h-[600px] md:h-[700px] cursor-move" style={{ background: 'radial-gradient(circle at center, #04445F 0%, #022230 100%)' }} />
+                <div ref={mountRef} className="w-full h-[500px] md:h-[600px] cursor-move rounded-xl border border-brand-grey/20 shadow-lg" style={{ background: 'radial-gradient(circle at center, #E6F4FF 0%, #FFFFFF 100%)' }} />
+            </div>
         </section>
     );
 };

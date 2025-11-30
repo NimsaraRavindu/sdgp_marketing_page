@@ -15,7 +15,7 @@ const Contact: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-brand-navy">
+    <section id="contact" className="py-20 bg-brand-white">
       <div className="container mx-auto px-6">
         <motion.div 
           className="text-center mb-12"
@@ -24,10 +24,10 @@ const Contact: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-3 text-brand-baby">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3 text-brand-navy">
             Get In Touch
           </h2>
-          <p className="text-lg text-brand-baby/70 max-w-2xl mx-auto">
+          <p className="text-lg text-brand-navy/80 max-w-2xl mx-auto">
             Have questions or want to partner with us? We'd love to hear from you.
           </p>
         </motion.div>
@@ -42,37 +42,37 @@ const Contact: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
              <div className="flex items-start space-x-4 group">
-              <div className="flex-shrink-0 w-12 h-12 bg-brand-navy/50 text-brand-green border border-brand-grotto/30 rounded-lg flex items-center justify-center transition-colors duration-300 group-hover:bg-brand-green/20 group-hover:text-brand-baby">
+              <div className="flex-shrink-0 w-12 h-12 bg-brand-white text-brand-green border border-brand-grey/30 rounded-lg flex items-center justify-center transition-colors duration-300 group-hover:bg-brand-green/10 group-hover:text-brand-navy">
                  <MapPinIcon />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-brand-baby">Our Office</h3>
-                <p className="text-brand-baby/70">123 Innovation Drive, Tech City, 10101</p>
+                <h3 className="text-xl font-semibold text-brand-navy">Our Office</h3>
+                <p className="text-brand-navy/80">123 Innovation Drive, Tech City, 10101</p>
               </div>
             </div>
              <div className="flex items-start space-x-4 group">
-              <div className="flex-shrink-0 w-12 h-12 bg-brand-navy/50 text-brand-green border border-brand-grotto/30 rounded-lg flex items-center justify-center transition-colors duration-300 group-hover:bg-brand-green/20 group-hover:text-brand-baby">
+              <div className="flex-shrink-0 w-12 h-12 bg-brand-white text-brand-green border border-brand-grey/30 rounded-lg flex items-center justify-center transition-colors duration-300 group-hover:bg-brand-green/10 group-hover:text-brand-navy">
                  <EnvelopeIcon />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-brand-baby">Email Us</h3>
-                <p className="text-brand-baby/70 hover:text-brand-green transition-colors"><a href="mailto:contact@linkara.com">contact@linkara.com</a></p>
+                <h3 className="text-xl font-semibold text-brand-navy">Email Us</h3>
+                <p className="text-brand-navy/80 hover:text-brand-green transition-colors"><a href="mailto:contact@linkara.com">contact@linkara.com</a></p>
               </div>
             </div>
             <div className="flex items-start space-x-4 group">
-              <div className="flex-shrink-0 w-12 h-12 bg-brand-navy/50 text-brand-green border border-brand-grotto/30 rounded-lg flex items-center justify-center transition-colors duration-300 group-hover:bg-brand-green/20 group-hover:text-brand-baby">
+              <div className="flex-shrink-0 w-12 h-12 bg-brand-white text-brand-green border border-brand-grey/30 rounded-lg flex items-center justify-center transition-colors duration-300 group-hover:bg-brand-green/10 group-hover:text-brand-navy">
                 <PhoneIcon />
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-brand-baby">Call Us</h3>
-                <p className="text-brand-baby/70 hover:text-brand-green transition-colors"><a href="tel:+15551234567">(555) 123-4567</a></p>
+                <h3 className="text-xl font-semibold text-brand-navy">Call Us</h3>
+                <p className="text-brand-navy/80 hover:text-brand-green transition-colors"><a href="tel:+15551234567">(555) 123-4567</a></p>
               </div>
             </div>
           </motion.div>
 
           {/* Contact Form */}
           <motion.div 
-            className="bg-brand-navy/50 p-6 md:p-8 rounded-xl border border-brand-grotto/30 shadow-lg hover:border-brand-green/50 hover:shadow-brand-green/20 min-h-[450px] flex flex-col justify-center"
+            className="bg-brand-baby/10 p-6 md:p-8 rounded-xl border border-brand-baby/30 shadow-lg hover:border-brand-green/50 hover:shadow-brand-green/20 min-h-[450px] flex flex-col justify-center"
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -90,8 +90,8 @@ const Contact: React.FC = () => {
                   <div className="w-20 h-20 bg-brand-green/20 text-brand-green rounded-full flex items-center justify-center mx-auto mb-6">
                     <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
                   </div>
-                  <h3 className="text-2xl font-bold text-brand-baby mb-2">Message Sent!</h3>
-                  <p className="text-brand-baby/70 mb-8">Thank you for reaching out. We'll get back to you shortly.</p>
+                  <h3 className="text-2xl font-bold text-brand-navy mb-2">Message Sent!</h3>
+                  <p className="text-brand-navy/80 mb-8">Thank you for reaching out. We'll get back to you shortly.</p>
                   <button 
                     onClick={() => setFormStatus('idle')}
                     className="text-brand-grotto hover:text-brand-green font-semibold underline"
@@ -109,46 +109,46 @@ const Contact: React.FC = () => {
                   className="space-y-6"
                 >
                   <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-brand-baby mb-2">Full Name</label>
+                    <label htmlFor="name" className="block text-sm font-medium text-brand-navy mb-2">Full Name</label>
                     <input
                       type="text"
                       name="name"
                       id="name"
                       required
-                      className="w-full bg-brand-navy border border-brand-grotto/50 rounded-lg px-4 py-2 text-brand-baby focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-brand-green transition-colors"
+                      className="w-full bg-brand-white border border-brand-grey/50 rounded-lg px-4 py-2 text-brand-navy focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-brand-green transition-colors"
                       placeholder="John Doe"
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-brand-baby mb-2">Email Address</label>
+                    <label htmlFor="email" className="block text-sm font-medium text-brand-navy mb-2">Email Address</label>
                     <input
                       type="email"
                       name="email"
                       id="email"
                       required
-                      className="w-full bg-brand-navy border border-brand-grotto/50 rounded-lg px-4 py-2 text-brand-baby focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-brand-green transition-colors"
+                      className="w-full bg-brand-white border border-brand-grey/50 rounded-lg px-4 py-2 text-brand-navy focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-brand-green transition-colors"
                       placeholder="you@example.com"
                     />
                   </div>
                    <div>
-                    <label htmlFor="subject" className="block text-sm font-medium text-brand-baby mb-2">Subject</label>
+                    <label htmlFor="subject" className="block text-sm font-medium text-brand-navy mb-2">Subject</label>
                     <input
                       type="text"
                       name="subject"
                       id="subject"
                       required
-                      className="w-full bg-brand-navy border border-brand-grotto/50 rounded-lg px-4 py-2 text-brand-baby focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-brand-green transition-colors"
+                      className="w-full bg-brand-white border border-brand-grey/50 rounded-lg px-4 py-2 text-brand-navy focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-brand-green transition-colors"
                       placeholder="Sponsorship Inquiry"
                     />
                   </div>
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-brand-baby mb-2">Message</label>
+                    <label htmlFor="message" className="block text-sm font-medium text-brand-navy mb-2">Message</label>
                     <textarea
                       name="message"
                       id="message"
                       rows={5}
                       required
-                      className="w-full bg-brand-navy border border-brand-grotto/50 rounded-lg px-4 py-2 text-brand-baby focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-brand-green transition-colors"
+                      className="w-full bg-brand-white border border-brand-grey/50 rounded-lg px-4 py-2 text-brand-navy focus:outline-none focus:ring-2 focus:ring-brand-green focus:border-brand-green transition-colors"
                       placeholder="Your message here..."
                     ></textarea>
                   </div>

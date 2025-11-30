@@ -89,16 +89,15 @@ export const CATEGORIES = [
     id: 'cultural',
     title: 'Cultural',
     description: 'Celebrate creativity and diversity through vibrant cultural events. From performances to festivals, experience expressions from every community.',
-    bgImage: 'https://images.unsplash.com/photo-1459749411177-0473ef716089?auto=format&fit=crop&q=80&w=2070',
-
-    mainImage: 'https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&q=80&w=1000',
-    subImage: 'https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&q=80&w=1000',
+    bgImage: 'https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&q=80&w=2070',
+    mainImage: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&q=80&w=1000',
+    subImage: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?auto=format&fit=crop&q=80&w=1000',
   },
   {
     id: 'social',
     title: 'Social',
-    description: 'Connect, interact, and build memories through fun social events. From mixers to community gatherings, there’s something for everyone.',
-
+    description: 'Connect, interact, and build memories through fun social events. From mixers to community gatherings, there is something for everyone.',
+    bgImage: 'https://images.unsplash.com/photo-1511795409834-ef04bbd61622?auto=format&fit=crop&q=80&w=2070',
     mainImage: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=1000',
     subImage: 'https://images.unsplash.com/photo-1523580494863-6f3031224c94?auto=format&fit=crop&q=80&w=1000',
   },

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 const Stats: React.FC = () => {
   return (
-    <section className="bg-brand-navy py-12 border-b border-brand-grotto/20">
+    <section className="bg-brand-white py-12 border-b border-brand-grey/20">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
           {STATS_DATA.map((stat, index) => (
@@ -19,7 +19,7 @@ const Stats: React.FC = () => {
               <h3 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-brand-baby to-brand-green">
                 {stat.value}
               </h3>
-              <p className="text-brand-baby/80 font-medium text-sm md:text-base uppercase tracking-wider">
+              <p className="text-brand-navy/80 font-medium text-sm md:text-base uppercase tracking-wider">
                 {stat.label}
               </p>
             </motion.div>

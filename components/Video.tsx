@@ -9,7 +9,7 @@ const Video: React.FC = () => {
         <h2 id="video-section-title" className="text-2xl font-semibold mb-4">Platform Overview</h2>
         <p className="text-sm text-slate-300 mb-4">Watch this short walkthrough to learn how Linkara supports partnerships, volunteering and sponsorship management.</p>
 
-        <div className="w-full aspect-video bg-black rounded overflow-hidden">
+        <div className="w-full aspect-video bg-brand-baby/10 border border-brand-baby/30 rounded overflow-hidden shadow-md">
           <video
             src={VIDEO_SRC}
             controls
