@@ -38,10 +38,12 @@ const Header: React.FC = () => {
       className={`sticky top-0 z-50 transition-all duration-300 bg-brand-navy/95 backdrop-blur-md shadow-lg border-b border-brand-grey/20`}
     >
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
-        {/* Logo */}
-        <a href="#" className="flex items-center space-x-2 text-2xl font-bold text-white z-50">
-          <LogoIcon />
-          <span className="font-serif tracking-wide text-white">Linkara</span>
+        {/* Logo (image contains the wordmark) */}
+        <a href="#" className="flex items-center text-white z-50" aria-label="Linkara home">
+          <div className="logo-frame w-16 h-16 overflow-hidden">
+            <LogoIcon />
+          </div>
+          <span className="sr-only">Linkara</span>
         </a>
 
         {/* Desktop Nav */}

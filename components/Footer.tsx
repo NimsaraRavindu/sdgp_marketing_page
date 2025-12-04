@@ -7,8 +7,10 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-6 py-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex items-center space-x-2 mb-4 md:mb-0 text-white">
-            <LogoIcon />
-            <span className="text-xl font-bold font-serif">Linkara</span>
+            <div className="logo-frame w-16 h-16 overflow-hidden">
+              <LogoIcon />
+            </div>
+            <span className="sr-only">Linkara</span>
           </div>
           <p className="text-white/70 text-sm mb-4 md:mb-0">
             &copy; {new Date().getFullYear()} Linkara. All rights reserved.

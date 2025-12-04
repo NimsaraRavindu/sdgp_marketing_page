@@ -4,11 +4,13 @@ import React from 'react';
 const Abinash = new URL('./assets/Photos/Abinash.png', import.meta.url).href;
 const Aaqib = new URL('./assets/Photos/Aaqib.jpeg', import.meta.url).href;
 const Tharusiyaa = new URL('./assets/Photos/Tharusiyaa.jpeg', import.meta.url).href;
+const Arani = new URL('./assets/Photos/Arani.jpeg', import.meta.url).href;
+const Sai = new URL('./assets/Photos/Sai.jpeg', import.meta.url).href;
+const Nimsara = new URL('./assets/Photos/Nimsara.jpg', import.meta.url).href;
+const LogoUrl = new URL('./assets/Photos/Logo.png', import.meta.url).href;
 
 export const LogoIcon: React.FC = () => (
-  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-brand-green">
-    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-  </svg>
+  <img src={LogoUrl} alt="Linkara" className="logo-img" />
 );
 
 export const FEATURES = [
@@ -121,7 +123,7 @@ export const TEAM_MEMBERS = [
   {
     name: 'Nimsara',
     title: 'Backend Engineer',
-    imageUrl: '',
+    imageUrl: Nimsara,
   },
   {
     name: 'Abinash',
@@ -131,12 +133,12 @@ export const TEAM_MEMBERS = [
   {
     name: 'Sai',
     title: 'Frontend Engineer',
-    imageUrl: 'https://i.pravatar.cc/150?u=a048581f4e29026701d',
+    imageUrl: Sai,
   },
   {
     name: 'Arani',
     title: 'Frontend Engineer',
-    imageUrl: 'https://i.pravatar.cc/150?u=a092581f4e29026700d',
+    imageUrl: Arani,
   },
   {
     name: 'Tharusiyaa',

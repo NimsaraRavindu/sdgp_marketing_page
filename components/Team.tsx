@@ -9,6 +9,9 @@ interface TeamMemberCardProps {
 }
 
 const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ imageUrl, name, title }) => {
+  const placeholder = 'data:image/svg+xml;utf8,' + encodeURIComponent(
+    '<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150"><rect width="100%" height="100%" fill="#f8fafc"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#94a3b8" font-family="Arial" font-size="18">No image</text></svg>'
+  );
   return (
     <motion.div 
       variants={{
@@ -25,6 +28,10 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ imageUrl, name, title }
             className="w-32 h-32 rounded-full object-cover border-4 border-brand-grotto/50 group-hover:border-brand-green transition-all duration-300 relative z-10"
             initial={{ scale: 1 }}
             whileHover={{ scale: 1.05 }}
+            onError={(e) => {
+              console.warn('Team image failed to load:', imageUrl);
+              (e.currentTarget as HTMLImageElement).src = placeholder;
+            }}
           />
           <div className="absolute inset-0 rounded-full bg-brand-grotto/20 blur-md transform scale-0 group-hover:scale-110 transition-transform duration-300"></div>
       </div>
