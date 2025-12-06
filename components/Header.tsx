@@ -37,17 +37,17 @@ const Header: React.FC = () => {
     <header
       className={`sticky top-0 z-50 transition-all duration-300 bg-brand-navy/95 backdrop-blur-md shadow-lg border-b border-brand-grey/20`}
     >
-      <div className="container mx-auto px-6 py-4 flex justify-between items-center">
+      <div className="container mx-auto px-4 py-2 flex justify-between items-center min-h-16 gap-4">
         {/* Logo (image contains the wordmark) */}
-        <a href="#" className="flex items-center text-white z-50" aria-label="Linkara home">
-          <div className="logo-frame w-16 h-16 overflow-hidden">
+        <a href="#" className="flex items-center gap-2 text-white z-50" aria-label="Linkara home">
+          <div className="logo-frame w-12 h-12 overflow-hidden flex-shrink-0">
             <LogoIcon />
           </div>
-          <span className="sr-only">Linkara</span>
+          <span className="text-brand-green font-bold text-lg tracking-wide hidden sm:inline">Linkara</span>
         </a>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center space-x-8">
+        <nav className="hidden lg:flex items-center h-16 space-x-8 leading-none">
           {navLinks.map((link) => (
             <a
               key={link.name}
@@ -60,7 +60,7 @@ const Header: React.FC = () => {
         </nav>
 
         {/* Login Button (Desktop) */}
-        <div className="hidden lg:flex items-center space-x-4">
+        <div className="hidden lg:flex items-center h-16 space-x-4">
             <a href="#contact" className="px-5 py-2 bg-brand-green hover:bg-brand-green/80 text-white text-sm uppercase tracking-wider font-bold rounded-full transition-colors duration-300 shadow-lg shadow-brand-green/20">
                 Login
             </a>
@@ -100,7 +100,7 @@ const Header: React.FC = () => {
               className="fixed top-0 right-0 bottom-0 w-64 sm:w-80 bg-brand-navy border-l border-brand-grey/30 z-[70] lg:hidden shadow-2xl flex flex-col"
             >
               {/* Sidebar Header */}
-              <div className="p-6 flex justify-between items-center border-b border-brand-grey/20">
+              <div className="p-4 flex justify-between items-center border-b border-brand-grey/20">
                 <span className="text-xl font-bold font-serif text-white">Menu</span>
                 <button 
                   onClick={() => setIsMobileMenuOpen(false)}
