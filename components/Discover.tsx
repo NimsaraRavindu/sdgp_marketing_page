@@ -31,7 +31,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ title, description, bgImage
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.6, delay: index * 0.1 }}
-      className="group relative w-full h-[450px] md:h-[400px] rounded-[2rem] overflow-hidden shadow-2xl border border-brand-baby/30 hover:border-brand-green/50 hover:shadow-brand-green/20 bg-brand-baby/10"
+      className="group relative w-full h-[450px] md:h-[400px] rounded-[2rem] overflow-hidden shadow-2xl border border-brand-baby/30 hover:border-brand-grotto/50 hover:shadow-brand-grotto/20 bg-brand-baby/10"
     >
       {/* Background Image & Overlay */}
       <div className="absolute inset-0">
@@ -67,7 +67,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ title, description, bgImage
             href="#contact"
             whileHover={{ scale: 1.05, backgroundColor: '#75E6DA', color: '#05445E' }}
             whileTap={{ scale: 0.95 }}
-            className="relative z-20 inline-block px-6 py-2 bg-brand-green text-brand-navy font-bold text-sm rounded-full transition-colors duration-300 shadow-md shadow-brand-green/20 cursor-pointer"
+            className="relative z-20 inline-block px-6 py-2 bg-brand-grotto text-white font-bold text-sm rounded-full transition-colors duration-300 shadow-md shadow-brand-grotto/20 cursor-pointer"
           >
             Join Now
           </motion.a>

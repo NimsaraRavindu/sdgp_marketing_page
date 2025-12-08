@@ -20,7 +20,7 @@ const Video: React.FC = () => {
         </div>
 
         <div className="mt-3 flex items-center justify-between">
-          <a href={VIDEO_SRC} className="text-sm text-brand-green hover:underline" download>
+          <a href={VIDEO_SRC} className="text-sm text-brand-grotto hover:underline" download>
             Download video
           </a>
           <span className="text-xs text-slate-400">Length: ~2 mins</span>

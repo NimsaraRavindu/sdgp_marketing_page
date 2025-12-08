@@ -29,7 +29,7 @@ const Stories: React.FC = () => {
               whileHover={{ y: -10 }}
               className="bg-brand-baby/10 p-8 rounded-2xl border border-brand-baby/30 shadow-xl"
             >
-              <div className="mb-6 text-brand-green">
+              <div className="mb-6 text-brand-grotto">
                 <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M14.017 21L14.017 18C14.017 16.0547 14.3301 15.1895 14.9385 14.25C15.7012 13.1328 17.0908 12.1934 19.5527 12.1934L19.6172 12.1934V6.19336C13.0078 6.19336 10.4131 11.8105 10.4131 16.3672L10.4131 21L14.017 21ZM5.0166 21L5.0166 18C5.0166 16.0547 5.3291 15.1895 5.9375 14.25C6.7002 13.1328 8.08984 12.1934 10.5518 12.1934L10.6162 12.1934V6.19336C4.00684 6.19336 1.41211 11.8105 1.41211 16.3672L1.41211 21L5.0166 21Z" />
                 </svg>
@@ -43,7 +43,7 @@ const Stories: React.FC = () => {
                 />
                 <div>
                   <h4 className="text-brand-navy font-bold">{story.author}</h4>
-                  <p className="text-sm text-brand-green/80">{story.role}</p>
+                  <p className="text-sm text-brand-grotto/80">{story.role}</p>
                 </div>
               </div>
             </motion.div>

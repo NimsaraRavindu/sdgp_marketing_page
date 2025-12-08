@@ -41,7 +41,7 @@ const HowItWorks: React.FC = () => {
                 {activeRole === role.id && (
                   <motion.div
                     layoutId="activeTab"
-                    className="absolute inset-0 bg-brand-green rounded-full shadow-lg"
+                    className="absolute inset-0 bg-brand-grotto rounded-full shadow-lg"
                     initial={false}
                     transition={{ type: 'spring', stiffness: 300, damping: 30 }}
                   />
@@ -68,14 +68,14 @@ const HowItWorks: React.FC = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
-                className="bg-brand-white border border-brand-grey/30 p-8 rounded-2xl relative group hover:border-brand-green/50 hover:bg-brand-green/10 transition-all duration-300"
+                className="bg-brand-white border border-brand-grey/30 p-8 rounded-2xl relative group hover:border-brand-grotto/50 hover:bg-brand-grotto/10 transition-all duration-300"
               >
                 {/* Step Number */}
-                <div className="absolute -top-4 -right-4 w-12 h-12 bg-brand-white rounded-full border border-brand-grey flex items-center justify-center text-xl font-bold text-brand-green shadow-xl">
+                <div className="absolute -top-4 -right-4 w-12 h-12 bg-brand-white rounded-full border border-brand-grey flex items-center justify-center text-xl font-bold text-brand-grotto shadow-xl">
                   {step.step}
                 </div>
                 
-                <div className="mb-6 text-brand-grotto group-hover:text-brand-green transition-colors">
+                <div className="mb-6 text-brand-grotto group-hover:text-brand-grotto/80 transition-colors">
                   {step.icon}
                 </div>
                 

@@ -30,7 +30,7 @@ const Feedback: React.FC = () => {
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-flex items-center px-8 py-3 bg-brand-green text-brand-navy font-bold rounded-full shadow-lg hover:shadow-brand-green/30 transition-all duration-300 text-lg"
+              className="inline-flex items-center px-8 py-3 bg-brand-grotto text-white font-bold rounded-full shadow-lg hover:shadow-brand-grotto/30 transition-all duration-300 text-lg"
             >
               <span>Take Our Survey</span>
               <svg className="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

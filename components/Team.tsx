@@ -19,13 +19,13 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ imageUrl, name, title }
         visible: { opacity: 1, scale: 1, transition: { duration: 0.5 } }
       }}
       whileHover={{ y: -10, transition: { duration: 0.3 } }}
-      className="text-center bg-brand-white p-6 rounded-xl border border-brand-grey/30 shadow-lg group hover:border-brand-green/50 hover:shadow-brand-green/10"
+      className="text-center bg-brand-white p-6 rounded-xl border border-brand-grey/30 shadow-lg group hover:border-brand-grotto/50 hover:shadow-brand-grotto/10"
     >
       <div className="relative w-32 h-32 mx-auto mb-4">
          <motion.img
             src={imageUrl}
             alt={name}
-            className="w-32 h-32 rounded-full object-cover border-4 border-brand-grotto/50 group-hover:border-brand-green transition-all duration-300 relative z-10"
+            className="w-32 h-32 rounded-full object-cover border-4 border-brand-grotto/50 group-hover:border-brand-grotto transition-all duration-300 relative z-10"
             initial={{ scale: 1 }}
             whileHover={{ scale: 1.05 }}
             onError={(e) => {

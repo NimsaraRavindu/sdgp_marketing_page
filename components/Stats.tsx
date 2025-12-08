@@ -16,7 +16,7 @@ const Stats: React.FC = () => {
               transition={{ duration: 0.5, delay: index * 0.1 }}
               className="space-y-2"
             >
-              <h3 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-brand-baby to-brand-green">
+              <h3 className="text-4xl md:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-brand-baby to-brand-grotto">
                 {stat.value}
               </h3>
               <p className="text-brand-navy/80 font-medium text-sm md:text-base uppercase tracking-wider">

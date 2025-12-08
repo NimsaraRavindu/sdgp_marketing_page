@@ -52,7 +52,7 @@ const Header: React.FC = () => {
             <a
               key={link.name}
               href={link.href}
-              className="text-white/80 hover:text-brand-green transition-colors duration-300 text-sm uppercase tracking-wider font-medium"
+              className="text-white/80 hover:text-brand-grotto transition-colors duration-300 text-sm uppercase tracking-wider font-medium"
             >
               {link.name}
             </a>
@@ -61,14 +61,14 @@ const Header: React.FC = () => {
 
         {/* Login Button (Desktop) */}
         <div className="hidden lg:flex items-center h-16 space-x-4">
-            <a href="#contact" className="px-5 py-2 bg-brand-green hover:bg-brand-green/80 text-white text-sm uppercase tracking-wider font-bold rounded-full transition-colors duration-300 shadow-lg shadow-brand-green/20">
+            <a href="#contact" className="px-5 py-2 bg-brand-grotto hover:bg-brand-grotto/80 text-white text-sm uppercase tracking-wider font-bold rounded-full transition-colors duration-300 shadow-lg shadow-brand-grotto/20">
                 Login
             </a>
         </div>
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden text-white/90 hover:text-brand-green focus:outline-none p-2 relative z-50 transition-colors"
+          className="lg:hidden text-white/90 hover:text-brand-grotto focus:outline-none p-2 relative z-50 transition-colors"
           onClick={() => setIsMobileMenuOpen(true)}
           aria-label="Open menu"
         >
@@ -104,7 +104,7 @@ const Header: React.FC = () => {
                 <span className="text-xl font-bold font-serif text-white">Menu</span>
                 <button 
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="text-white/80 hover:text-brand-green transition-colors p-1"
+                  className="text-white/80 hover:text-brand-grotto transition-colors p-1"
                   aria-label="Close menu"
                 >
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -125,7 +125,7 @@ const Header: React.FC = () => {
                     <a
                       href={link.href}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className="text-white/80 hover:text-brand-green text-lg font-medium block py-3 border-b border-brand-grey/20 last:border-0"
+                      className="text-white/80 hover:text-brand-grotto text-lg font-medium block py-3 border-b border-brand-grey/20 last:border-0"
                     >
                       {link.name}
                     </a>
@@ -141,7 +141,7 @@ const Header: React.FC = () => {
                   <a
                     href="#contact"
                     onClick={() => setIsMobileMenuOpen(false)}
-                    className="block w-full text-center px-5 py-3 bg-brand-green hover:bg-brand-green/80 text-white font-bold rounded-lg transition-colors shadow-lg hover:shadow-brand-green/30"
+                    className="block w-full text-center px-5 py-3 bg-brand-grotto hover:bg-brand-grotto/80 text-white font-bold rounded-lg transition-colors shadow-lg hover:shadow-brand-grotto/30"
                   >
                     Login
                   </a>

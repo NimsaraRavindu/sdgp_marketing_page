@@ -16,13 +16,13 @@ const Footer: React.FC = () => {
             &copy; {new Date().getFullYear()} Linkara. All rights reserved.
           </p>
           <div className="flex space-x-4">
-            <a href="#" className="text-white/70 hover:text-brand-green transition-colors" aria-label="Facebook">
+            <a href="#" className="text-white/70 hover:text-brand-grotto transition-colors" aria-label="Facebook">
               <FacebookIcon />
             </a>
-            <a href="#" className="text-white/70 hover:text-brand-green transition-colors" aria-label="Twitter">
+            <a href="#" className="text-white/70 hover:text-brand-grotto transition-colors" aria-label="Twitter">
               <TwitterIcon />
             </a>
-            <a href="#" className="text-white/70 hover:text-brand-green transition-colors" aria-label="LinkedIn">
+            <a href="#" className="text-white/70 hover:text-brand-grotto transition-colors" aria-label="LinkedIn">
               <LinkedInIcon />
             </a>
           </div>

@@ -10,7 +10,7 @@ module.exports = {
         brand: {
           navy: '#04445F',
           grotto: '#75E6DA',
-          green: '#10B981',
+          green: '#13db23ff',
           baby: '#F4F4F4',
           white: '#FFFFFF',
         }

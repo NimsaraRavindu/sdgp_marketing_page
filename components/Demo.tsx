@@ -36,15 +36,15 @@ const Demo: React.FC = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.98 }}
-            className="group relative overflow-hidden bg-brand-baby/10 border border-brand-baby/30 rounded-2xl p-8 flex flex-col items-center text-center hover:border-brand-green/50 transition-all duration-300 hover:shadow-brand-green/20 shadow-xl cursor-pointer"
+            className="group relative overflow-hidden bg-brand-baby/10 border border-brand-baby/30 rounded-2xl p-8 flex flex-col items-center text-center hover:border-brand-grotto/50 transition-all duration-300 hover:shadow-brand-grotto/20 shadow-xl cursor-pointer"
           >
             <div className="absolute inset-0 bg-gradient-to-br from-brand-grotto/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-            <div className="bg-brand-baby/10 p-4 rounded-2xl mb-6 border border-brand-baby/30 group-hover:border-brand-green/50 transition-colors">
+            <div className="bg-brand-baby/10 p-4 rounded-2xl mb-6 border border-brand-baby/30 group-hover:border-brand-grotto/50 transition-colors">
                 <FigmaIcon />
             </div>
             <h3 className="text-2xl font-bold text-brand-navy mb-2">Interactive Prototype</h3>
             <p className="text-brand-navy/80 mb-6">Explore the high-fidelity design vision, user flows, and interactions in Figma.</p>
-            <span className="inline-flex items-center text-brand-green font-semibold group-hover:text-brand-grotto transition-colors">
+            <span className="inline-flex items-center text-brand-grotto font-semibold group-hover:text-brand-grotto/80 transition-colors">
               View Prototype 
               <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
             </span>
@@ -67,7 +67,7 @@ const Demo: React.FC = () => {
             </div>
             <h3 className="text-2xl font-bold text-brand-navy mb-2">Live Platform</h3>
             <p className="text-brand-navy/80 mb-6">Experience the fully functional web application with real-time features.</p>
-             <span className="inline-flex items-center text-brand-grotto font-semibold group-hover:text-brand-green transition-colors">
+             <span className="inline-flex items-center text-brand-grotto font-semibold group-hover:text-brand-grotto/80 transition-colors">
               Launch App 
               <svg className="w-4 h-4 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
             </span>

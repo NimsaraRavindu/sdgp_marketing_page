@@ -42,7 +42,7 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
           <span 
-            className="bg-clip-text text-transparent bg-gradient-to-r from-brand-baby to-brand-green inline-block"
+            className="bg-clip-text text-transparent bg-gradient-to-r from-brand-baby to-brand-grotto inline-block"
             style={{ WebkitBackgroundClip: 'text', backgroundClip: 'text', WebkitTextFillColor: 'transparent', color: 'transparent' }}
           >
             Connect. Collaborate. Create Impact.
@@ -72,7 +72,7 @@ const Hero: React.FC = () => {
           </a>
           <a
             href="#how-it-works"
-            className="w-full sm:w-auto bg-brand-white border border-brand-grey/50 hover:bg-brand-green/10 text-brand-navy font-semibold py-3 px-8 rounded-lg shadow-lg transition-all duration-300 block cursor-pointer relative z-30 transform hover:scale-105 active:scale-95"
+            className="w-full sm:w-auto bg-brand-white border border-brand-grey/50 hover:bg-brand-grotto/10 text-brand-navy font-semibold py-3 px-8 rounded-lg shadow-lg transition-all duration-300 block cursor-pointer relative z-30 transform hover:scale-105 active:scale-95"
           >
             Learn More
           </a>

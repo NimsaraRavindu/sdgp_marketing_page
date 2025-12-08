@@ -16,10 +16,10 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description, ind
         hidden: { opacity: 0, y: 30 },
         visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
       }}
-      className="bg-brand-baby/10 p-6 rounded-xl border border-brand-baby/30 shadow-lg hover:border-brand-green/50 hover:shadow-brand-green/10 transition-all duration-300"
+      className="bg-brand-baby/10 p-6 rounded-xl border border-brand-baby/30 shadow-lg hover:border-brand-grotto/50 hover:shadow-brand-grotto/10 transition-all duration-300"
       whileHover={{ scale: 1.05 }}
     >
-      <div className="mb-4 inline-flex items-center justify-center w-12 h-12 bg-brand-baby/10 rounded-lg text-brand-green border border-brand-baby/30">
+      <div className="mb-4 inline-flex items-center justify-center w-12 h-12 bg-brand-baby/10 rounded-lg text-brand-grotto border border-brand-baby/30">
         {icon}
       </div>
       <h3 className="text-xl font-bold mb-2 text-brand-navy">{title}</h3>
