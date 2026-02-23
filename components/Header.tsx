@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import { LogoIcon } from '../constants';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence, useScroll, useSpring } from 'framer-motion';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 120,
+    damping: 24,
+    restDelta: 0.001,
+  });
 
   const navLinks = [
     { name: 'Discover', href: '#discover' },
@@ -35,8 +41,16 @@ const Header: React.FC = () => {
 
   return (
     <header
-      className={`sticky top-0 z-50 transition-all duration-300 bg-brand-navy/95 backdrop-blur-md shadow-lg border-b border-brand-grey/20`}
+      className={`sticky top-0 z-50 transition-all duration-300 ${
+        isScrolled
+          ? 'bg-brand-navy/95 backdrop-blur-md shadow-lg border-b border-brand-grey/20'
+          : 'bg-brand-navy/90 backdrop-blur-sm border-b border-transparent'
+      }`}
     >
+      <motion.div
+        className="absolute top-0 left-0 right-0 h-[3px] origin-left bg-gradient-to-r from-brand-grotto via-brand-baby to-brand-green"
+        style={{ scaleX }}
+      />
       <div className="container mx-auto px-4 py-2 flex justify-between items-center min-h-16 gap-4">
         {/* Logo (image contains the wordmark) */}
         <a href="#" className="flex items-center gap-2 text-white z-50" aria-label="Linkara home">
@@ -52,9 +66,10 @@ const Header: React.FC = () => {
             <a
               key={link.name}
               href={link.href}
-              className="text-white/80 hover:text-brand-grotto transition-colors duration-300 text-sm uppercase tracking-wider font-medium"
+              className="group relative text-white/80 hover:text-brand-grotto transition-colors duration-300 text-sm uppercase tracking-wider font-medium"
             >
               {link.name}
+              <span className="absolute -bottom-2 left-0 h-[2px] w-0 bg-brand-grotto transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
         </nav>
