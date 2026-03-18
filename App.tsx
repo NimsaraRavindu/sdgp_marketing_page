@@ -202,9 +202,16 @@ const App: React.FC = () => {
   };
 
   const handleGetStartedClick = () => {
-    const discoverSection = document.getElementById('discover');
-    if (discoverSection) {
-      discoverSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const videoSection = document.getElementById('video');
+    if (videoSection) {
+      videoSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
+  const handleLearnMoreClick = () => {
+    const mobilePreviewSection = document.getElementById('mobile-preview');
+    if (mobilePreviewSection) {
+      mobilePreviewSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
 
@@ -270,7 +277,7 @@ const App: React.FC = () => {
               </p>
               <div className="lp-hero-cta">
                 <button className="lp-btn lp-btn-primary" onClick={handleGetStartedClick}>Get Started</button>
-                <button className="lp-btn lp-btn-secondary">Learn More</button>
+                <button className="lp-btn lp-btn-secondary" onClick={handleLearnMoreClick}>Learn More</button>
               </div>
             </div>
             <div className="lp-hero-media-frame">
@@ -318,7 +325,7 @@ const App: React.FC = () => {
           </div>
         </section>
 
-        <section className="lp-video lp-section">
+        <section className="lp-video lp-section" id="video">
           <div className="lp-container lp-video-inner">
             <h2>See Linkara in Action</h2>
             <div className="lp-video-frame">
