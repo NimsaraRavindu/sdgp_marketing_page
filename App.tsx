@@ -201,6 +201,13 @@ const App: React.FC = () => {
     setActiveTeamIndex((prev) => (prev + 1) % teamMembers.length);
   };
 
+  const handleGetStartedClick = () => {
+    const discoverSection = document.getElementById('discover');
+    if (discoverSection) {
+      discoverSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
   const getSlideOffset = (memberIndex: number) => {
     let diff = memberIndex - activeTeamIndex;
     const half = Math.floor(teamMembers.length / 2);
@@ -262,7 +269,7 @@ const App: React.FC = () => {
                 Linkara is a comprehensive ecosystem designed for volunteers, communities, and sponsors to drive meaningful social change through technology and collaboration.
               </p>
               <div className="lp-hero-cta">
-                <button className="lp-btn lp-btn-primary">Get Started</button>
+                <button className="lp-btn lp-btn-primary" onClick={handleGetStartedClick}>Get Started</button>
                 <button className="lp-btn lp-btn-secondary">Learn More</button>
               </div>
             </div>
@@ -302,12 +309,12 @@ const App: React.FC = () => {
               <p>Explore our user journey through our high-fidelity Figma prototype.</p>
               <span className="lp-link-inline">View Prototype <span className="material-symbols-outlined">arrow_forward</span></span>
             </a>
-            <article className="lp-card lp-card-primary">
+            <a className="lp-card lp-card-primary" href={loginUrl} target="_blank" rel="noreferrer">
               <span className="material-symbols-outlined lp-icon-xl">rocket_launch</span>
               <h3>Live Platform</h3>
               <p>Experience the current production build of the Linkara social ecosystem.</p>
               <span className="lp-link-inline">Launch Now <span className="material-symbols-outlined">open_in_new</span></span>
-            </article>
+            </a>
           </div>
         </section>
 
