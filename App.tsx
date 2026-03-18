@@ -14,6 +14,7 @@ const platformVideoUrl = new URL('./assets/videos/Project_Linkara_Blueprint.mp4'
 const heroImageUrl =
   'https://lh3.googleusercontent.com/aida-public/AB6AXuCD4A4R2aSZCYqdqRHC6SZ9ZhcDk4JV_z5KwpSVpqOCD_gkc99BMrOlFG7dHFvNQEM7ON0JDgOI6LJMi4xbbsURSuaxqMvRBJwXvv_giYEQzwD4nqDezxPd4G-BPEVievvmUbRKNNUmyJHGz3wSP7LMK785tz_B3KlQz3941eb4tHt_BOB_MyZOMk-GmVykAYvmyoFoRYoQ-JzkDaemmYF6yzzKHW5PUjA01LBiPivO5ITix6YD_SVVEBf5Mr5DayP5QzWEZzX38Ms';
 const prototypeUrl = 'https://www.figma.com/proto/your-figma-link-here';
+const loginUrl = 'https://sdgp-eight.vercel.app/';
 
 const stories = [
   {
@@ -244,7 +245,9 @@ const App: React.FC = () => {
             <a href="#team">Team</a>
             <a href="#contact">Contact</a>
           </div>
-          <button className="lp-login">Login</button>
+          <a href={loginUrl} className="lp-login" target="_blank" rel="noreferrer">
+            Login
+          </a>
         </nav>
       </header>
 

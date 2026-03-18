@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { LogoIcon } from '../constants';
 import { motion, AnimatePresence, useScroll, useSpring } from 'framer-motion';
 
+const loginUrl = 'https://sdgp-eight.vercel.app/';
+
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -76,7 +78,7 @@ const Header: React.FC = () => {
 
         {/* Login Button (Desktop) */}
         <div className="hidden lg:flex items-center h-16 space-x-4">
-            <a href="#contact" className="px-5 py-2 bg-brand-grotto hover:bg-brand-grotto/80 text-white text-sm uppercase tracking-wider font-bold rounded-full transition-colors duration-300 shadow-lg shadow-brand-grotto/20">
+            <a href={loginUrl} target="_blank" rel="noreferrer" className="px-5 py-2 bg-brand-grotto hover:bg-brand-grotto/80 text-white text-sm uppercase tracking-wider font-bold rounded-full transition-colors duration-300 shadow-lg shadow-brand-grotto/20">
                 Login
             </a>
         </div>
@@ -154,7 +156,9 @@ const Header: React.FC = () => {
                   className="pt-6"
                 >
                   <a
-                    href="#contact"
+                    href={loginUrl}
+                    target="_blank"
+                    rel="noreferrer"
                     onClick={() => setIsMobileMenuOpen(false)}
                     className="block w-full text-center px-5 py-3 bg-brand-grotto hover:bg-brand-grotto/80 text-white font-bold rounded-lg transition-colors shadow-lg hover:shadow-brand-grotto/30"
                   >
